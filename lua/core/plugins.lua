@@ -20,7 +20,11 @@ return require('packer').startup(function(use)
 		'nvim-telescope/telescope.nvim', tag = '0.1.8',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-	use { "ellisonleao/gruvbox.nvim" }
+	use "ellisonleao/gruvbox.nvim"
+	use "folke/noice.nvim"
+	use "MunifTanjim/nui.nvim"
+	use "lukas-reineke/indent-blankline.nvim"
+	use "lewis6991/gitsigns.nvim"
 	if packer_bootstrap then
 		require('packer').sync()
 	end

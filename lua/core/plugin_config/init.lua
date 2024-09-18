@@ -1,4 +1,7 @@
 require("core.plugin_config.lualine")
+require("core.plugin_config.ibl")
+require("core.plugin_config.gitsigns")
+require("core.plugin_config.noice")
 require("core.plugin_config.theme")
 require("core.plugin_config.telescope")
 require("core.plugin_config.treesitter")
