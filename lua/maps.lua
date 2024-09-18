@@ -3,6 +3,11 @@ vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader><Space>", "<CMD>Neotree toggle<CR>")
 vim.keymap.set("n", "<leader>e", "<CMD>Neotree focus<CR>")
+vim.keymap.set("n", "<leader>w", "<CMD>update<CR>")
+vim.keymap.set("n", "<leader>q", "<CMD>q<CR>")
+vim.api.nvim_set_keymap('n', '<leader>t', ':vsplit | terminal<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>r', ':q<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<Esc>', [[<C-\><C-n>]], { noremap = true, silent = true })
 
 local function disable_arrow_keys()
 
